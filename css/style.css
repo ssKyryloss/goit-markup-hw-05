@@ -624,7 +624,7 @@ border-color: #4D5AE5;
     padding: 8px 16px;
     outline: transparent;
     resize: none;
-    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-comment-block:focus {
@@ -664,9 +664,7 @@ border-color: #4D5AE5;
     text-decoration-line: underline;
 }
 .modal-last-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     min-width: 169px;
     height: 56px;
     color: var(--WHITE, #FFF);
@@ -681,5 +679,5 @@ border-color: #4D5AE5;
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    margin: auto;
 }
