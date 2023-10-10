@@ -545,8 +545,8 @@ address {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
     fill: #FFFFFF;
 }
 
@@ -571,7 +571,37 @@ address {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     display: block;
     margin-bottom: 4px;
+}
+
+.modal-form-list-container {
+    position: relative;
+}
+
+.modal-form-list-containe-item {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-list-containe-item:focus {
+border-color: #4D5AE5;
+}
+.modal-form-list-container-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-list-containe-item:focus .modal-form-list-container-icon {
+    fill: #4D5AE5;
 }
