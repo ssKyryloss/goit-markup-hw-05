@@ -78,6 +78,19 @@ address {
 }
 
 .header-nav-link {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link-dublicate {
     color: #404bbf;
     font-size: 16px;
     font-weight: 500;
@@ -90,7 +103,7 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link::after {
+.header-nav-link-dublicate::after {
     content: '';
     position: absolute;
     left: 0;
@@ -100,7 +113,7 @@ address {
     border-radius: 2px;
 }
 
-.header-nav-link::after {
+.header-nav-link-dublicate::after {
     content: '';
     width: 48px;
     height: 4px;
@@ -311,6 +324,7 @@ address {
 .item-icon {
     width: 40px;
     height: 40px;
+    margin-top: 8px;
 }
 
 .link-icon {
@@ -359,11 +373,11 @@ address {
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item:hover .portfolio-text-content{
     transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-container-content {
