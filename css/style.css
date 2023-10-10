@@ -495,6 +495,10 @@ address {
 }
 
 .footer-container-contacts {
+    margin-left: 80px;
+}
+
+.footer-container-contacts-text {
     margin-bottom: 16px;
     color: var(--WHITE, #FFF);
     font-size: 16px;
@@ -502,8 +506,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-.footer-container-contacts-text {}
 
 .footer-container-block {
     display: flex;
